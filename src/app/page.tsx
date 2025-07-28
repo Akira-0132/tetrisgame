@@ -1,7 +1,10 @@
 'use client';
 
 import React from 'react';
-import Tetris from '../components/organisms/Tetris';
+import dynamic from 'next/dynamic';
+
+// ssr: false でクライアント側のみ描画
+const Tetris = dynamic(() => import('../components/organisms/Tetris'), { ssr: false });
 
 const Home = () => {
   return (

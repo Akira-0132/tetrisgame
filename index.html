@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テトリスゲーム</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #1a1a1a;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .game-container {
+            text-align: center;
+        }
+        h1 {
+            color: #ff6b35;
+            margin-bottom: 20px;
+        }
+        canvas {
+            border: 2px solid #ff6b35;
+            background-color: #000;
+        }
+        .controls {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .score {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #ff6b35;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <h1>🎮 テトリス</h1>
+        <canvas id="tetris" width="240" height="400"></canvas>
+        <div class="controls">
+            <p>操作方法:</p>
+            <p>← → : 移動 | ↓ : 落下 | Q : 回転</p>
+        </div>
+        <div class="score" id="score">スコア: 0</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
